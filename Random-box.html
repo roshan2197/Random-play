@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Play</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+    }
+
+    #box1 {
+        width: 200px;
+        height: 200px;
+        background-color: blueviolet;
+        top: 100px;
+        left: 100px;
+    }
+
+    #box2 {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(115, 255, 0);
+        top: 100px;
+        left: 800px;
+    }
+
+    #box3 {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(0, 0, 0);
+        top: 400px;
+        left: 970px;
+    }
+
+    #box4 {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(255, 0, 0);
+        top: 100px;
+        left: 1200px;
+    }
+
+    #box5 {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(255, 0, 234);
+        top: 400px;
+        left: 100px;
+    }
+
+    #box6 {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(0, 255, 179);
+        top: 390px;
+        left: 500px;
+    }
+
+    #box7 {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(255, 208, 0);
+        top: 40px;
+        left: 430px;
+    }
+
+    button {
+        background-color: bisque;
+        border-radius: 20px;
+        top: 550px;
+        left: 550px;
+        font-size: 60px;
+        padding: 10px 80px;
+    }
+</style>
+
+<body>
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+    <div id="box4"></div>
+    <div id="box5"></div>
+    <div id="box6"></div>
+    <div id="box7"></div>
+    <button onclick="changePosition(0 , 1300)">Click</button>
+</body>
+
+<script>
+    function changePosition(min, max) {
+        var a = Math.floor(Math.random() * ((max - 700) - min + 1)) + min;
+        var b = Math.floor(Math.random() * (max - min + 1)) + min;
+        var c = Math.floor(Math.random() * ((max - 700) - min + 1)) + min;
+        var d = Math.floor(Math.random() * (max - min + 1)) + min;
+        var e = Math.floor(Math.random() * ((max - 700) - min + 1)) + min;
+        var f = Math.floor(Math.random() * (max - min + 1)) + min;
+        var g = Math.floor(Math.random() * ((max - 700) - min + 1)) + min;
+        var h = Math.floor(Math.random() * (max - min + 1)) + min;
+        var i = Math.floor(Math.random() * ((max - 700) - min + 1)) + min;
+        var j = Math.floor(Math.random() * (max - min + 1)) + min;
+        var k = Math.floor(Math.random() * ((max - 700) - min + 1)) + min;
+        var l = Math.floor(Math.random() * (max - min + 1)) + min;
+        var m = Math.floor(Math.random() * ((max - 700) - min + 1)) + min;
+        var n = Math.floor(Math.random() * (max - min + 1)) + min;
+
+        document.getElementById('box1').style.top = "0" + a + "px";
+        document.getElementById('box1').style.left = "0" + b + "px";
+
+        document.getElementById('box2').style.top = "0" + c + "px";
+        document.getElementById('box2').style.left = "0" + b + "px";
+
+        document.getElementById('box3').style.top = "0" + e + "px";
+        document.getElementById('box3').style.left = "0" + f + "px";
+
+        document.getElementById('box4').style.top = "0" + g + "px";
+        document.getElementById('box4').style.left = "0" + h + "px";
+
+        document.getElementById('box5').style.top = "0" + i + "px";
+        document.getElementById('box5').style.left = "0" + j + "px";
+
+        document.getElementById('box6').style.top = "0" + k + "px";
+        document.getElementById('box6').style.left = "0" + l + "px";
+
+        document.getElementById('box7').style.top = "0" + m + "px";
+        document.getElementById('box7').style.left = "0" + n + "px";
+    }
+</script>
+
+</html>
